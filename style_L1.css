@@ -1,0 +1,295 @@
+/*for all*/
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px
+}
+a {
+  color: black;
+  text-decoration: none
+}
+/*body*/
+body {
+  background: #eee url(images/background_L1.png) no-repeat top;
+  background-size: 1920px auto;
+  font-family: 'Roboto', sans-serif
+}
+.mainBlock {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px
+}
+.nav {
+  margin: auto
+}
+svg {
+  width: 80px;
+  height: 225px
+}
+.center {
+    width: 800px;
+    margin: 15px auto
+}
+/*---------header------------*/
+header a {
+    display: inline-block;
+    margin-right: 12px;
+    line-height: 59px /* [height :first-child] 45px + [font-size] 14px */
+}
+header a:hover {
+    color: #944
+}
+header :first-child {
+    background: url(images/logo.png);
+    height: 45px;
+    width: 173px;
+    font-size: 0px
+}
+header :last-child {
+    margin-right: 0
+}
+#activeRef {
+  font-weight: bold;
+  color: #933
+}
+/*---------content------------*/
+.content {
+    background: url(images/index_L1_main.png);
+    background-size: auto 500px;
+    height: 500px
+}
+    /*-----------box1------------*/
+#box1 {
+  float: left;
+  width: 310px;
+  margin-top: 100px
+}
+#box1 p {
+    margin: 10px 0
+}
+#box1 :first-child {
+    font-size: 25px
+}
+.captionSmallOrange {
+  text-transform: uppercase;
+  color: orange
+}
+.mainText {
+  padding: 5px auto;
+  font-size: 12px;
+  line-height: 15px
+}
+#detail {
+  border-radius: 5px;
+  background: #933;
+  padding: 5px;
+  color: white
+}
+.littleRedBow, .littleBlackBow {
+    margin-top: 15px;
+    display: inline-block;
+    height: 30px;
+    width: 30px
+}
+.littleRedBow {
+    background: url(images/littleBowsRed.png);
+    background-size: cover
+}
+.littleBlackBow {
+    background: url(images/littleBowsBlack.png);
+    background-size: cover
+}
+    /*-----------box2------------*/
+#box2 {
+  margin-left: 550px;
+  padding-top: 50px
+}
+#buy {
+  text-decoration: underline;
+  color: #922;
+  font-weight: bold
+}
+#delivery {
+  margin: 5px 0;
+  color: #777
+}
+#captionSmallGrey {
+  margin: 5px 0;
+  color: #bbb
+}
+span {
+  font-size: 16px;
+  color: #777;
+  font-weight: bold
+}
+/*---------footer------------*/
+footer p {
+  float: left;
+  width: 100%;
+  margin-right:-27px;
+  line-height: 27px
+}
+footer a {
+  float: left;
+  background: url(images/vkOff.png);
+  background-size: cover;
+  height: 27px;
+  width: 27px;
+  border-radius: 5px
+}
+footer a:hover {
+  background: url(images/vkOn.png);
+  background-size: cover;
+}
+/*-----------popup window------------------*/
+.b-popup{
+    width:100%;
+    height:100%;
+    background: rgba(100,30,30,0.9);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+}
+.b-popup-content{
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin:10px auto;
+    height:95%; /*bottom scroll arrow dont hide*/
+    width:500px;
+    position: relative; /*position 'hidePopUp'*/
+}
+.hidePopUp {
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white
+}
+/*popup form style*/
+form {
+    width:95%;
+    margin: 20px auto 0;
+    color: white;
+}
+form p, form span, form a, form input, form label, form select, form textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+form p, form span, form a, form label {
+    color: white;
+}
+
+form textarea {
+    color: grey;
+}
+.brightRedBackground {
+    padding: 20px;
+    background: #a11
+}
+.darkRedBackground {
+    padding: 20px 20px 10px;
+    background: #711
+}
+form p {
+    margin:0;
+    padding: 0
+}
+/*header*/
+#formHeader {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px
+}
+/*input*/
+input {    
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.width90percent {
+    width: 90%;
+}
+/*select*/
+select {
+    padding-left: 20px;
+    margin: 0 0 10px;
+    border: none;
+    height: 30px;
+}
+select.select1 {
+    width: 350px
+}
+select.select2 {
+    width: 200px
+}
+form span {
+    width: 150px;
+    float: left;
+    line-height: 30px /*'option' vertical align = select height*/
+}
+/*checkbox*/
+.container { /* Customize the label (the container) */
+  width: 130px; /*depends of length of text - 'other box of kitties'*/
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 22px
+}
+.container input { /* Hide the browser's default checkbox */
+  display: none;
+}
+.checkmark { /* Create a custom checkbox */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+.container input:checked ~ .checkmark { /* When the checkbox is checked, add a blue background */
+  background: white;
+}
+.checkmark:after {/* Create the checkmark/indicator (hidden when not checked) */
+  content: "";
+  position: absolute;
+  display: none;
+  /*style*/
+  left: 6px;
+  bottom: 2px;
+  width: 5px;
+  height: 15px;
+  border: solid #711;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.container input:checked ~ .checkmark:after { /* Show the checkmark when checked */
+  display: block;
+}
+/*text*/
+textarea{
+    border: none;
+    width: 90%;
+    height: 110px;
+    padding: 10px 20px;
+    overflow: hidden;
+    resize: none;
+}
+/* button 'submit' */
+input[type=submit] {
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    background: #711;
+    color: white;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+}
+input[type=submit]:active {
+    background: #411
+}

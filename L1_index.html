@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Clan Vilar: мастерская</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/png">
+	<link rel="stylesheet" href="style_L1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&amp;subset=cyrillic" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="text/popUp.js"></script>
+</head>
+
+<body> <!-- background img -->
+    <div class="mainBlock"> <!-- width 1200px -->
+        <a href='L5_index.html' class="nav">
+            <svg>
+                <path stroke="#922" stroke-width="3" fill="none"
+                    d="M 75,5
+                       L 5,110 75,215
+                       "/>
+            </svg>
+        </a>
+
+        <div class="center"> <!-- width 800px -->
+            <header>
+                <a href="#">.<!-- workaround--></a>
+                <a href="#" id="activeRef">Луки</a>         <!-- L1-L5 -->
+                <a href="#">Стрелы</a>                      <!-- L6 -->
+                <a href="#">Аксессуары</a>                  <!-- L7 -->
+                <a href="#">Галерея</a>                     <!-- L8 -->
+                <a href="L9_conditions.html">Условия работы и доставки</a>   <!-- L9 -->
+                <a href="#">О нас</a>                       <!-- L10 -->
+                <a href="#">Контакты</a>                    <!-- L11 -->
+            </header>
+
+            <div class='content'> <!-- height 500px, background img -->
+                <div id="box1">
+                    <p>СРЕДНЕВЕКОВЫЙ ПРЯМОЙ ЛУК</p>
+                    <p class="captionSmallOrange">Ясень, бревно, кожа, осина, слезы русалки</p>
+                    <p class="mainText">Прямой лук самая простая форма лука. Плавно утоньшающееся от рукояти к концам плечей древко cтянутое тетивой. Его достоинстви в простоте изготовлении и стабильности выстрела</p>
+                    <a href="#" id="detail">ПОДРОБНО</a>
+                    <br />
+
+                    <a href="#" class="littleRedBow"></a>
+                    <a href="L2_index.html" class="littleBlackBow"></a>
+                    <a href="L3_index.html" class="littleBlackBow"></a>
+                    <a href="L4_index.html" class="littleBlackBow"></a>
+                    <a href="L5_index.html" class="littleBlackBow"></a>
+                </div>
+
+                  
+                <div id="box2">
+                    <a href="javascript:PopUpShow()" id="buy">ЗАКАЗАТЬ ТАКОЙ ЛУК</a>
+                    <p id="captionSmallGrey">Ориентировочная цена: <span>2500</span> руб.</p>
+                    <p id="delivery">Доставка в любую точку мира</p> 
+                </div>
+            </div>
+
+            <footer> <!-- height 50px -->
+                <p>&copy Иван Иванович Иванов | Мастерская Clan Vilar | 2014</p>
+                <a href="https://vk.com"></a>
+            </footer>
+        </div>
+
+        <a href='#' class="nav">
+            <svg>
+                <path stroke="#922" stroke-width="3" fill="none"
+                    d="M 5,5
+                       L 75,110 5,215
+                       "/>
+            </svg>
+        </a>
+    </div>
+
+<!-- popup window-->
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            <a class='hidePopUp' href="javascript:PopUpHide()">X</a> <!--'close' cross-->
+            
+            <form>
+                <div class="brightRedBackground">
+                    <p id="formHeader">оформить заказ</p>
+                    <p>заполните форму ниже, и мы скоро свяжемся с вами</p>
+                </div>
+
+                <div class='darkRedBackground'>
+                    <input class='width90percent' name="name" placeholder="Как к Вам обращаться" class="name" required />
+                    <input class='width90percent' name="emailaddress" placeholder="e-mail" class="email" type="email" required />
+                </div>
+
+                <div class="brightRedBackground" class='select'>
+                    <select class='select1'>
+                        <option>Лук: кривой</option>
+                        <option>лук: прямой</option>
+                    </select>
+
+                    <span>option:</span>
+
+                    <select class='select2'>
+                        <option>Важный момент</option>
+                        <option>Пункт 2</option>
+                    </select>
+
+                    <span>other option:</span>
+
+                    <select class='select2'>
+                        <option>Очень важный момент</option>
+                        <option>Пункт 2</option>
+                    </select>
+
+                    <label class="container">other box of kitties
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <textarea placeholder="Сообщение" required></textarea>
+                    <input name="submit" type="submit" value="Отправить" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

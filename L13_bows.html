@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clan Vilar: мастерская</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/png">
+    <link rel="stylesheet" href="style_L13.css">
+    <link rel="stylesheet" href="styleNinjaScript.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="text/bows.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="text/popUp.js"></script>
+</head>
+
+<body>
+    <div id="center">
+        <header>
+            <a href="#">.<!-- workaround--></a>
+            <a href="L1_index.html" id="activeRef">Луки</a>         <!-- L1-L5 -->
+            <a href="#">Стрелы</a>                      <!-- L6 -->
+            <a href="#">Аксессуары</a>                  <!-- L7 -->
+            <a href="#">Галерея</a>                     <!-- L8 -->
+            <a href="L9_conditions.html">Условия работы и доставки</a>   <!-- L9 -->
+            <a href="#">О нас</a>                       <!-- L10 -->
+            <a href="#">Контакты</a>                    <!-- L11 -->
+            <!-- listBows                                    L12 -->
+            <!-- Bows                                        L13 -->
+        </header>
+
+        <div class="header2">
+            <a href="#" id="activeChoiсe">Готовые предложения</a>
+            <a href="#">Лук на заказ</a>
+            <a href="#">Процесс изготовления</a>
+            <a href="#">Материалы</a>
+        </div>
+          
+        <div id="topLeft">
+            <a href="#">
+                <span id="topLeftTriangle"></span>
+                <span id="topLeftText">Другие луки</span>
+            </a>
+            
+            <div><img src="images/bow2.png"></a></div>
+        </div>
+
+        <div id="topRight">
+            <p class="header1">Лук стеклотексталитовый стилизация</p>
+            <p class="smallCaptionOrange">натяжение 14-15 кг (на 65см) тетива: mikro dyneema, лавсан. растягивается на стрелу до 70см обтяжка: кожа.</p>
+            <p class="mainText">Прямой лук – самая простая форма лука. Плавно утоньшающееся от рукояти к концам плечей древко, стянутое тетивой. Его достоинство в простоте изготовления и стабильности выстрела. POS-материалы (POS materials, POS — point of sales — место продажи) — это материалы, способствующие продвижению бренда или товара в местах продаж (шелфтокеры, ценникодержатели, воблеры, ценники, стопперы, промостойки, диспенсеры, пластиковые лотки, флажки, упаковка, выкраска, наклейки, декоративные магниты и подобное. На основе любого готового предложения, может быть изготовлен лук на заказ. Мы можем не просто сделать уникальный лук, но и рукоятку, под руку стрелка.</p>
+            <p><span>2500</span> руб <a href="javascript:PopUpShow()" id="buy">заказать лук</a> <span id="delivery"> Доставка в любую точку мира</span></p>
+        </div>
+
+        <div id="bottomLeft">
+            <p>Фото:</p>
+
+            <div class="gallery">
+                <img src="images/background_L1.png" onclick="lightbox(0)" style="width:30%;" />
+                <img src="images/background_L2.png" onclick="lightbox(1)" style="width:30%;" />
+                <img src="images/background_L3.png" onclick="lightbox(2)" style="width:30%;" />
+                <img src="images/background_L4.png" onclick="lightbox(3)" style="width:30%;"/>
+                <img src="images/background_L5.png" onclick="lightbox(4)" style="width:30%;"/>
+            </div>
+        </div>
+
+        <div id="bottomRight">
+          <p class="bottomRightTitle">Процесс изготовления:</p>
+          <a href="#"><img src="images/littleBowsRed.png" height='20px'><span>Исторические ориентиры</span></a>
+          <a href="#"><img src="images/littleBowsRed.png" height='20px'><span>Особенности</span></a>
+          <a href="#"><img src="images/littleBowsRed.png" height='20px'><span>Обтяжка</span></a>
+          <a href="#"><img src="images/littleBowsRed.png" height='20px'><span>Тетива</span></a>
+          <!-- more -->
+        </div>
+
+        <footer>
+          <p>&copy Иван Иванович Иванов | Мастерская Clan Vilar | 2014</p>
+          <a href="https://vk.com"></a>
+        </footer>
+    </div>
+
+  <!-- gallery -->
+    <div style="display:none;">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                      <a class="ns-img" href="images/background_L1.png"></a>
+                      <div class="caption">
+                        <h3>Dummy Caption 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan purus.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="ns-img" href="images/background_L2.png"></a>
+                      <div class="caption">
+                        <h3>Dummy Caption 2</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                      </div>
+                    </li>
+                      <li>
+                      <a class="ns-img" href="images/background_L3.png"></a>
+                      <div class="caption">
+                        <h3>Dummy Caption 3</h3>
+                        <p>Duis fringilla arcu convallis urna commodo, et tempus velit posuere.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="ns-img" href="images/background_L4.png"></a>
+                      <div class="caption">
+                        <h3>Dummy Caption 4</h3>
+                        <p>Quisque semper dolor sed neque consequat scelerisque at sed ex. Nam gravida massa.</p>
+                      </div>
+                    </li>
+                        <li>
+                            <a class="ns-img" href="images/background_L5.png"></a>
+                            <div class="caption">
+                                <h3>Dummy Caption 5</h3>
+                                <p>Proin non dui at metus suscipit bibendum.</p>
+                            </div>
+                        </li>
+                    </ul>
+                <div id="fsBtn" class="fs-icon"></div>
+            </div>
+        </div>
+    </div>
+
+  <!-- popup window-->
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            <a class='hidePopUp' href="javascript:PopUpHide()">X</a> <!--'close' cross-->
+            
+            <form>
+                <div class="brightRedBackground">
+                    <p id="formHeader">оформить заказ</p>
+                    <p>заполните форму ниже, и мы скоро свяжемся с вами</p>
+                </div>
+
+                <div class='darkRedBackground'>
+                    <input class='width90percent' name="name" placeholder="Как к Вам обращаться" class="name" required />
+                    <input class='width90percent' name="emailaddress" placeholder="e-mail" class="email" type="email" required />
+                </div>
+
+                <div class="brightRedBackground" class='select'>
+                    <select class='select1'>
+                        <option>Лук: классический средневековый</option>
+                        <option>Пункт 2</option>
+                    </select>
+
+                    <span>option:</span>
+
+                    <select class='select2'>
+                        <option>Важный момент</option>
+                        <option>Пункт 2</option>
+                    </select>
+
+                    <span>other option:</span>
+
+                    <select class='select2'>
+                        <option>Очень важный момент</option>
+                        <option>Пункт 2</option>
+                    </select>
+
+                    <label class="container">other box of kitties
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <textarea placeholder="Сообщение" required></textarea>
+                    <input name="submit" type="submit" value="Отправить" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
